@@ -1,0 +1,275 @@
+[debug] [2025-04-05T18:16:08.534Z] ----------------------------------------------------------------------
+[debug] [2025-04-05T18:16:08.538Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\balat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-05T18:16:08.539Z] CLI Version:   14.1.0
+[debug] [2025-04-05T18:16:08.539Z] Platform:      win32
+[debug] [2025-04-05T18:16:08.539Z] Node Version:  v22.14.0
+[debug] [2025-04-05T18:16:08.539Z] Time:          Sat Apr 05 2025 23:46:08 GMT+0530 (India Standard Time)
+[debug] [2025-04-05T18:16:08.539Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-05T18:16:08.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-05T18:16:08.553Z] > authorizing via signed-in user (balathineshv@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\balat\OneDrive\Pictures\learnify
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-05T18:17:54.259Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:17:54.259Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:17:54.261Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-05T18:17:55.096Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-05T18:17:55.096Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project learnify-a3c67 (learnify) 
+[info] 
+=== Apphosting Setup
+[debug] [2025-04-05T18:18:00.377Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:18:00.377Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:18:00.377Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/learnify-a3c67/billingInfo [none]
+[debug] [2025-04-05T18:18:01.853Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/learnify-a3c67/billingInfo 200
+[debug] [2025-04-05T18:18:01.854Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/learnify-a3c67/billingInfo {"name":"projects/learnify-a3c67/billingInfo","projectId":"learnify-a3c67","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-04-05T18:18:01.862Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:18:01.863Z] Checked if tokens are valid: true, expires at: 1743880508390
+[debug] [2025-04-05T18:18:01.864Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learnify-a3c67 [none]
+[debug] [2025-04-05T18:18:02.573Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learnify-a3c67 200
+[debug] [2025-04-05T18:18:02.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learnify-a3c67 {"projectId":"learnify-a3c67","projectNumber":"44538837520","displayName":"learnify","name":"projects/learnify-a3c67","resources":{"hostingSite":"learnify-a3c67"},"state":"ACTIVE","etag":"1_4fe0558c-5cd8-45b7-a812-777c1c75bd5d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-04-05T18:18:24.534Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-04-05T18:18:24.638Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-04-05T18:18:24.638Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.6.0","browserURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.tgz"},"live":{"version":"11.6","browserURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.6.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.6.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.6.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.6.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.6.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.6.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.6.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\balat\OneDrive\Pictures\learnify is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=802783450&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-04-05T18:20:17.907Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-04-05T18:20:17.908Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-04-05T18:20:18.347Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-04-05T18:20:18.348Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-04-05T18:20:18.362Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-04-05T18:20:18.801Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-04-05T18:20:18.802Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"praveen562","id":197190477,"node_id":"U_kgDOC8DjTQ","avatar_url":"https://avatars.githubusercontent.com/u/197190477?v=4","gravatar_id":"","url":"https://api.github.com/users/praveen562","html_url":"https://github.com/praveen562","followers_url":"https://api.github.com/users/praveen562/followers","following_url":"https://api.github.com/users/praveen562/following{/other_user}","gists_url":"https://api.github.com/users/praveen562/gists{/gist_id}","starred_url":"https://api.github.com/users/praveen562/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/praveen562/subscriptions","organizations_url":"https://api.github.com/users/praveen562/orgs","repos_url":"https://api.github.com/users/praveen562/repos","events_url":"https://api.github.com/users/praveen562/events{/privacy}","received_events_url":"https://api.github.com/users/praveen562/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2025-01-31T02:44:28Z","updated_at":"2025-04-05T06:11:42Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as praveen562 
+[info] 
+[debug] [2025-04-05T18:21:55.918Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:21:56.255Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2025-04-05T18:21:56.255Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-04-05T18:22:01.404Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:22:01.768Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2025-04-05T18:22:01.768Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-04-05T18:22:22.819Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:22:23.172Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:22:23.172Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:24:56.952Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:24:57.688Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:24:57.688Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:24:59.857Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:00.143Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:00.143Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:06.103Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:06.491Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:06.492Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:07.159Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:07.414Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:07.414Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:07.806Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:08.131Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:08.131Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:08.248Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:08.507Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:08.514Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:08.514Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:08.846Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:08.847Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:15.176Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:15.502Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:15.502Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:15.903Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.136Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.148Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:16.149Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:16.305Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.417Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:16.418Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:16.531Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:16.531Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:16.811Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.844Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.898Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.933Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.958Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:16.986Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.019Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.034Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.034Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.038Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.054Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.072Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.072Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.085Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.120Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.148Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.173Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.174Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.180Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.204Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.204Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.220Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.235Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.235Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.246Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.264Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.264Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.271Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.271Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.283Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:17.287Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.287Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.306Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.306Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.335Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.335Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.392Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.393Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.396Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.396Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.437Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.437Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.441Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.441Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.462Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.463Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:17.504Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:17.505Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:30.159Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:30.557Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:30.557Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:31.692Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:31.989Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:31.989Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:32.171Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:32.384Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:32.398Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:32.399Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:32.560Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:32.709Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:32.709Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:32.733Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:32.786Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:32.786Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:32.877Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:32.980Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:32.981Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:33.033Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:33.103Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:33.103Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:33.242Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:25:33.250Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:33.250Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:25:33.530Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2025-04-05T18:25:33.530Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:20.917Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:21.246Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:21.246Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:22.166Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:22.464Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:22.464Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:22.809Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:23.091Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:23.092Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:23.121Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:23.375Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:23.383Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:23.383Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:23.605Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:23.670Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:23.671Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:23.779Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:23.881Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:23.882Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.003Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.003Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.289Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.323Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.350Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.379Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.411Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.441Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.473Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.502Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.513Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.513Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.538Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.541Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.541Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.568Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:24.625Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.626Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.678Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.678Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.685Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.685Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.712Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.712Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.746Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.747Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.764Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.764Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.780Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.780Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:24.786Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:24.786Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:26:25.050Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:26:25.339Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 401
+[debug] [2025-04-05T18:26:25.339Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:27:43.798Z] >>> [apiv2][query] GET https://api.github.com/repos/user	/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:27:44.152Z] <<< [apiv2][status] GET https://api.github.com/repos/user	/actions/secrets/public-key 401
+[debug] [2025-04-05T18:27:44.152Z] <<< [apiv2][body] GET https://api.github.com/repos/user	/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:27:44.707Z] >>> [apiv2][query] GET https://api.github.com/repos/user	/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:27:44.866Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:27:44.931Z] <<< [apiv2][status] GET https://api.github.com/repos/user	/actions/secrets/public-key 401
+[debug] [2025-04-05T18:27:44.931Z] <<< [apiv2][body] GET https://api.github.com/repos/user	/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:27:44.999Z] >>> [apiv2][query] GET https://api.github.com/repos/user	/actions/secrets/public-key type=owner
+[debug] [2025-04-05T18:27:45.162Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2025-04-05T18:27:45.162Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+[debug] [2025-04-05T18:27:45.229Z] <<< [apiv2][status] GET https://api.github.com/repos/user	/actions/secrets/public-key 401
+[debug] [2025-04-05T18:27:45.230Z] <<< [apiv2][body] GET https://api.github.com/repos/user	/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
