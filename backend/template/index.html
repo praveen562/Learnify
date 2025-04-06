@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Transcription</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-6">Real-Time Transcription</h1>
+        <div class="flex justify-center items-center mb-6">
+            <button id="start-btn" class="bg-blue-500 text-white p-3 rounded-lg">Start Recording</button>
+            <div id="timer" class="ml-4 text-2xl">00:00:00</div>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-xl font-semibold">Transcription:</h2>
+            <div id="transcription" class="border p-4 rounded-md h-48 overflow-y-auto bg-white"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
